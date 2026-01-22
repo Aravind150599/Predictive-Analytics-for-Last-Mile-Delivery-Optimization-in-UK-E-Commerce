@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load the data
-quantitative = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
-qualitative_file = r"C:\Users\Kishore\Downloads\Kathirvelan\Qualitative Analysis_data_20251230_132246.xlsx"
+quantitative = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
+qualitative_file = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Qualitative Analysis_data_20251230_132246.xlsx"
 
 # Load the qualitative data (Interviews sheet)
 df = pd.read_excel(qualitative_file, sheet_name='Interviews')
@@ -34,4 +34,5 @@ ax.legend(title='Sentiment', loc='upper right')
 ax.grid(True, alpha=0.3, linestyle='--')
 
 plt.tight_layout()
+
 plt.show()
