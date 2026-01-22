@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 from scipy import stats
 
 # Load data from Excel file
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 
 def clean_columns(df):
     """Standardize column names to snake_case (lower_case_with_underscores)"""
@@ -316,4 +316,5 @@ if not agg_dict:
     print("Performance columns missing.")
 else:
     performance_summary = performance_df.groupby('company').agg(agg_dict).round(2)
+
     print(performance_summary)
