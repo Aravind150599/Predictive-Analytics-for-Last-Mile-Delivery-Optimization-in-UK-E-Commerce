@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the data
-file_path = rCUsersKishoreDownloadsKathirvelanQuantitative Analysis_data_20251230_131750.xlsx
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 performance_df = pd.read_excel(file_path, sheet_name='Performance')
 
 # Filter for the three cities
@@ -74,4 +74,5 @@ for idx, (metric_col, metric_label) in enumerate(metrics)
     ax.margins(x=0.1, y=0.15)
 
 plt.savefig('graph2_comparative_dashboard_lines.png', dpi=300, bbox_inches='tight')
+
 plt.show()
