@@ -4,7 +4,7 @@ from collections import Counter
 import re
 
 # Load the data
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Qualitative Analysis_data_20251230_132246.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Qualitative Analysis_data_20251230_132246.xlsx"
 
 # Read all sheets
 interviews_df = pd.read_excel(file_path, sheet_name='Interviews')
@@ -151,3 +151,4 @@ with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
     field_comparison.to_excel(writer, sheet_name='Field Observations')
 
 print(f"\n\nDetailed results exported to: {output_file}")
+
