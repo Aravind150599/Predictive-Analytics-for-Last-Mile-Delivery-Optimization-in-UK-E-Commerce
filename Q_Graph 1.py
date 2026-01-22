@@ -8,8 +8,8 @@ from sklearn.metrics import mean_squared_error, r2_score
 
 
 # File paths
-quantitative = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
-qualitative_file = r"C:\Users\Kishore\Downloads\Kathirvelan\Qualitative Analysis_data_20251230_132246.xlsx"
+quantitative = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
+qualitative_file = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Qualitative Analysis_data_20251230_132246.xlsx"
 
 # Load data
 logistics_df = pd.read_excel(quantitative, sheet_name='Logistics')
@@ -174,4 +174,5 @@ fig.update_yaxes(
 fig.write_html('graph1_model_comparison.html')
 print(f"\nRandom Forest - RMSE: {rf_rmse:.2f} min, R²: {rf_r2:.4f}")
 print(f"Linear Regression - RMSE: {lr_rmse:.2f} min, R²: {lr_r2:.4f}")
+
 fig.show()
