@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import numpy as np
 
 # File path
-quantitative = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+quantitative = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 
 # Load data
 logistics_df = pd.read_excel(quantitative, sheet_name='Logistics')
@@ -105,5 +105,6 @@ for _, row in city_success.iterrows():
     print(f"  Success Rate: {row['success_rate']:.2f}%")
     print(f"  Std Error: ±{row['std_error']:.2f}%")
     print(f"  Sample Size: {int(row['count'])}\n")
+
 
 fig.show()
