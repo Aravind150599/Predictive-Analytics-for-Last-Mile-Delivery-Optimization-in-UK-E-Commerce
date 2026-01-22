@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the data
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 logistics_df = pd.read_excel(file_path, sheet_name='Logistics')
 performance_df = pd.read_excel(file_path, sheet_name='Performance')
 
@@ -159,4 +159,5 @@ print(metrics_df.to_string(index=False))
 print(f"\nTotal cities analyzed: {len(cities)}")
 print(f"Total deliveries across all cities: {metrics_df['total_deliveries'].sum()}")
 print(f"Total delay incidents: {metrics_df['delay_incidents'].sum()}")
+
 print(f"Average first-attempt success rate: {metrics_df['first_attempt_success'].mean():.2f}%")
