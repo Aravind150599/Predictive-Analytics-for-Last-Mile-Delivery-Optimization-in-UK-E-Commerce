@@ -4,7 +4,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 
 # File path
-quantitative = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+quantitative = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 
 # Load data
 logistics_df = pd.read_excel(quantitative, sheet_name='Logistics')
@@ -154,3 +154,4 @@ for key, value in asos_metrics.items():
     print(f"  {key}: {value:.2f}")
 
 fig.show()
+
