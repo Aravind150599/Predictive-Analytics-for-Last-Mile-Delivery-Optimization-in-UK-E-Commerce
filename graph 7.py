@@ -5,7 +5,7 @@ from matplotlib.patches import FancyBboxPatch
 from scipy.ndimage import gaussian_filter1d
 
 # Load the data
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 performance_df = pd.read_excel(file_path, sheet_name='Performance')
 
 # Filter for Amazon UK and ASOS
@@ -159,3 +159,4 @@ for idx, row in company_data.iterrows():
             print(f"  {label_clean}: {value:.2f}")
         else:
             print(f"  {label_clean}: £{value:.2f}")
+
