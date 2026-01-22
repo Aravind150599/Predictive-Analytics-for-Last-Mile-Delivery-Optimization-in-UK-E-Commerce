@@ -142,7 +142,7 @@ for company in performance_summary.index:
             print(f"  • Positive sentiment interviews: {pos_count}/{len(company_interviews)}")
 
 # Export detailed findings
-output_file = r"C:\Users\Kishore\Downloads\Kathirvelan\Qualitative_Analysis_Results.xlsx"
+output_file = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Qualitative Analysis_data_20251230_132246.xlsx"
 with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
     performance_summary.to_excel(writer, sheet_name='Performance Summary')
     interview_comparison.to_excel(writer, sheet_name='Interview Comparison')
@@ -151,4 +151,5 @@ with pd.ExcelWriter(output_file, engine='openpyxl') as writer:
     field_comparison.to_excel(writer, sheet_name='Field Observations')
 
 print(f"\n\nDetailed results exported to: {output_file}")
+
 
