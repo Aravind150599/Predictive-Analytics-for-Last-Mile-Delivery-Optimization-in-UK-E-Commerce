@@ -4,7 +4,7 @@ import numpy as np
 from scipy import stats
 
 # Load data
-data_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+data_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 perf_data = pd.read_excel(data_path, sheet_name='Performance')
 
 # Define metrics to visualize
@@ -153,4 +153,5 @@ for metric_name, metric_title in metric_list:
             if len(subset) > 0:
                 print(f"    {city}: Mean={subset.mean():.2f}, "
                       f"Median={subset.median():.2f}, "
+
                       f"Std={subset.std():.2f}")
