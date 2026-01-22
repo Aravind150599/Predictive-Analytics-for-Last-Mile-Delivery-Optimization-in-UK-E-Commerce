@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
 # Load the data
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 logistics_df = pd.read_excel(file_path, sheet_name='Logistics')
 
 # Print available columns to verify
@@ -111,3 +111,4 @@ for label, imp in zip(feature_labels_sorted, importance_sorted):
     print(f"{label}: {imp:.4f}")
 print(f"\nTotal samples used: {len(data_clean)}")
 print(f"Model R² score: {rf_model.score(X_test, y_test):.4f}")
+
