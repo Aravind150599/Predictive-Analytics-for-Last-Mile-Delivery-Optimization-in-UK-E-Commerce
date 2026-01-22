@@ -5,7 +5,7 @@ from scipy import stats
 from sklearn.metrics import r2_score
 
 # Load the data
-file_path = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
+file_path = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
 logistics_df = pd.read_excel(file_path, sheet_name='Logistics')
 
 # Filter for Amazon UK and ASOS
@@ -118,4 +118,5 @@ for company in companies:
     print(f"  R²: {r2:.4f}")
     print(f"  Regression equation: y = {slope:.3f}x + {intercept:.2f}")
     print(f"  Mean predicted time: {x.mean():.2f} min")
+
     print(f"  Mean actual time: {y.mean():.2f} min")
