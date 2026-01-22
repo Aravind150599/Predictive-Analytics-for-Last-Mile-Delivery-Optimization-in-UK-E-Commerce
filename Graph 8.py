@@ -3,8 +3,8 @@ import plotly.graph_objects as go
 import numpy as np
 
 # Load the data
-performance_file = r"C:\Users\Kishore\Downloads\Kathirvelan\Quantitative Analysis_data_20251230_131750.xlsx"
-qualitative_file = r"C:\Users\Kishore\Downloads\Kathirvelan\Qualitative Analysis_data_20251230_132246.xlsx"
+performance_file = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Quantitative Analysis_data_20251230_131750.xlsx"
+qualitative_file = r"C:\Users\aravi\Downloads\Survey_Data-20260122T230150Z-1-001\Survey_Data\Qualitative Analysis_data_20251230_132246.xlsx"
 
 # Load relevant sheets
 performance_df = pd.read_excel(performance_file, sheet_name='Performance')
@@ -201,3 +201,4 @@ print("  pip install -U plotly kaleido")
 
 # Display the figure
 fig.show()
+
